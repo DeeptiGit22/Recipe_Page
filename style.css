@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* colors */
+	--clr-heading: hsl(14, 45%, 36%);
+	--clr-Raspberry: hsl(332, 51%, 32%);
+	--clr-white: hsl(0, 0%, 100%);
+	--rose-White: hsl(330, 100%, 98%);
+	--clr-bg: hsl(30, 54%, 90%);
+	--Light-Grey: hsl(30, 18%, 87%);
+	--clr-text: hsl(30, 10%, 34%);
+	--Dark-Charcoal: hsl(24, 5%, 18%);
+
+	/* font-families */
+	--ff-young-serif: "Young Serif";
+	--ff-outfit: "Outfit";
+	--ff-sans-normal: sans-serif;
+}
+
+html,
+body {
+	font-size: 16px;
+	color: var(--clr-text);
+	font-family: var(--ff-outfit), sans-serif;
+	background-color: var(--clr-bg);
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+img {
+	display: block;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.container {
+	max-width: 1440px;
+	background-color: var(--clr-white);
+	margin: 4em 1em;
+	border-radius: 20px;
+	padding: 2em;
+}
+
+.main-heading {
+	padding: 0.5em 0;
+	font-family: var(--ff-young-serif);
+	color: var(--Dark-Charcoal);
+	font-size: 2.85rem;
+}
+
+.preparation-section {
+	background: var(--rose-White);
+	padding: 1em;
+	margin: 1em 0;
+	border-radius: 10px;
+	ul {
+		padding: 0em 1em;
+	}
+	li {
+		padding: 0.5em 1.5em;
+	}
+
+	li::marker {
+		color: var(--clr-Raspberry);
+	}
+	span {
+		font-weight: 600;
+	}
+}
+
+.sub-heading {
+	color: var(--clr-Raspberry);
+	font-weight: 600;
+	font-size: 1.25rem;
+	margin-bottom: 0.5em;
+}
+
+.heading {
+	color: var(--clr-heading);
+	font-weight: 600;
+	font-family: var(--ff-young-serif);
+	font-size: 1.5rem;
+	margin-bottom: 0.5em;
+}
+
+.sub-section {
+	padding-bottom: 1em;
+	border-bottom: 2px solid var(--Light-Grey);
+	margin: 2em 0em;
+	ul,
+	ol {
+		padding: 0em 1em;
+	}
+	li {
+		padding: 0.5em 1.5em;
+	}
+	li::marker {
+		color: var(--clr-heading);
+		font-weight: 600;
+	}
+	span {
+		font-weight: 600;
+	}
+}
+
+table {
+	width: 100%;
+	margin-top: 1em;
+}
+
+td {
+	padding: 0.5rem 1.5rem;
+}
+.value {
+	color: var(--clr-heading);
+	font-weight: 600;
+}
+
+table,
+tr {
+	border-bottom: 1px solid var(--Light-Grey);
+	border-collapse: collapse;
+}
+table,
+tr:last-child {
+	border-bottom: none;
+}
+.sub-section:last-child {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+@media only screen and (max-width: 376px) {
+	.main-heading {
+		font-size: 1.85rem;
+	}
+}
