@@ -30,7 +30,6 @@ body {
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	letter-spacing: 1px;
 }
 
 img {
@@ -52,6 +51,7 @@ img {
 	font-family: var(--ff-young-serif);
 	color: var(--Dark-Charcoal);
 	font-size: 2.85rem;
+	letter-spacing: 1px;
 }
 
 .preparation-section {
@@ -79,6 +79,7 @@ img {
 	font-weight: 600;
 	font-size: 1.25rem;
 	margin-bottom: 0.5em;
+	letter-spacing: 1px;
 }
 
 .heading {
@@ -87,6 +88,7 @@ img {
 	font-family: var(--ff-young-serif);
 	font-size: 1.5rem;
 	margin-bottom: 0.5em;
+	letter-spacing: 1px;
 }
 
 .sub-section {
